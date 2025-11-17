@@ -1,0 +1,6 @@
+Lab Explanation:
+- The purpose of this lab is to configure static routes on both vSRX nodes
+- There is a subnet connected to each vSRX node. vSRX-NG1 is connected to the 10.0.1.0/24 subnet and vSRX-NG2 is connected to the subnet 10.0.2.0/24. 
+- The lab shows a end user host on each subnet, and we want both VPC3 and VPC4 to be able to ping each other
+- In order to do this, we to configure a static route to the prefix 10.0.2.0/24 on vSRX-NG1 and a static route to the prefix 10.0.1.0/24 on vSRX-NG2.
+- Both subnets are separated by a point to point link (100.0.0.0/30) which leads to the public internet
